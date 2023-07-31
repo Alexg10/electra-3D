@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  padding: 12px;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: 9;
+}
+
+main {
+  border-radius: 24px;
+  background-color: #e7fefb;
+}
+
+.section {
+  position: relative;
+  font-family: "Cabin", sans-serif;
+  color: #ffeded;
+  text-transform: uppercase;
+  font-size: 7vmin;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  color: rgb(28, 28, 28);
+}
+.charging {
+  height: 150vh;
+  padding-top: 102px;
+}
+.content {
+  position: relative;
+  z-index: 99;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+section:nth-child(odd) {
+  justify-content: flex-end;
+}
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  padding-bottom: 100vh;
+}
+
+.card_container {
+  display: flex;
+  justify-content: start;
+}
+.card_container:nth-child(even) {
+  justify-content: end;
+}
+.card {
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(12px);
+  display: inline-flex;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 100px;
+  text-align: left;
+  width: 50%;
+  max-width: 400px;
+}
+.title {
+  font-family: Aeonik;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 48px;
+}
+.description {
+  font-family: Aeonik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.contact {
+  height: 100vh;
+}

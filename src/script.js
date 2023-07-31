@@ -20,7 +20,7 @@ const objectsDistance = 2;
  */
 const gltfLoader = new GLTFLoader();
 let model;
-gltfLoader.load("/models/Electra/borne_04.gltf", (gltf) => {
+gltfLoader.load("/models/PowerBox/PowerBox.gltf", (gltf) => {
   model = gltf.scene;
   model.scale.set(6, 6, 6);
   model.rotation.set(0, Math.PI, 0);
@@ -135,7 +135,7 @@ const sections = document.querySelectorAll(".charging");
 setTimeout(() => {
   if (model != null) {
     gsap.to(model.rotation, {
-      y: Math.PI * 0.25,
+      y: Math.PI * 2,
       scrollTrigger: {
         trigger: sections[0],
         start: "top top",
@@ -144,9 +144,9 @@ setTimeout(() => {
       },
     });
     gsap.to(model.scale, {
-      x: 5,
-      y: 5,
-      z: 5,
+      x: 4,
+      y: 4,
+      z: 4,
       scrollTrigger: {
         trigger: sections[0],
         start: "top top",
@@ -155,7 +155,7 @@ setTimeout(() => {
       },
     });
     gsap.to(model.position, {
-      y: -1.25,
+      y: 0,
       scrollTrigger: {
         trigger: sections[0],
         start: "top top",
